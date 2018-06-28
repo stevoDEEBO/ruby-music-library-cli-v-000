@@ -70,7 +70,7 @@ class MusicLibraryController
   def play_song
     puts "Which song number would you like to play?"
     song_list = Song.all.sort_by{|s| s.name}
-    song_number = gets.chomp.to_i
+    song_number = gets.chomp
     binding.pry
     if (1..Song.all.length).include?(song_number)
       song = song_list[song_number+2]
