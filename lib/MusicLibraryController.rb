@@ -74,7 +74,6 @@ class MusicLibraryController
     if (1..Song.all.length).include?(song_number)
       song = song_list[song_number-1]
       puts "Playing #{song.name} by #{song.artist.name}"
-      binding.pry
     end
   end
 end
